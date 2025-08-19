@@ -7,7 +7,7 @@ import { useRef } from 'react';
 import { ExternalLink, Github, BarChart, Users, TrendingUp, Brain } from 'lucide-react';
 
 export function ProjectsSection() {
-  const t = useTranslations('projects');
+  const t = useTranslations('projects};
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -134,7 +134,7 @@ export function ProjectsSection() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('title')}
+              {t.title}}
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -203,7 +203,7 @@ export function ProjectsSection() {
 
                   {/* Technologies */}
                   <div>
-                    <h4 className="text-sm font-semibold text-card-foreground mb-3">{t('technologies')}</h4>
+                    <h4 className="text-sm font-semibold text-card-foreground mb-3">{t.technologies}}</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.technologies.map((tech) => (
                         <span
@@ -223,14 +223,14 @@ export function ProjectsSection() {
                       className="flex-1 bg-primary text-primary-foreground py-2 px-4 rounded-lg font-medium hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center space-x-2 text-sm"
                     >
                       <ExternalLink className="h-4 w-4" />
-                      <span>{t('viewProject')}</span>
+                      <span>{t.viewProject}}</span>
                     </a>
                     <a
                       href={project.githubUrl}
                       className="flex-1 border border-border text-card-foreground py-2 px-4 rounded-lg font-medium hover:bg-secondary transition-colors duration-200 flex items-center justify-center space-x-2 text-sm"
                     >
                       <Github className="h-4 w-4" />
-                      <span>{t('viewCode')}</span>
+                      <span>{t.viewCode}}</span>
                     </a>
                   </div>
                 </div>
@@ -249,7 +249,7 @@ export function ProjectsSection() {
               </p>
               <button
                 onClick={() => {
-                  const contactSection = document.querySelector('#contact');
+                  const contactSection = document.querySelector('#contact};
                   if (contactSection) {
                     contactSection.scrollIntoView({ behavior: 'smooth' });
                   }

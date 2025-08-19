@@ -3,21 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Mail } from 'lucide-react';
 
-export function HeroSection() {
-  const scrollToAbout = () => {
-    const aboutSection = document.querySelector('#about};
-    if (aboutSection) {
-      aboutSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  const scrollToContact = () => {
-    const contactSection = document.querySelector('#contact};
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+export function HeroSectionSimple() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-primary/5 to-secondary/10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
@@ -64,7 +50,6 @@ export function HeroSection() {
             transition={{ duration: 0.8, delay: 0.8 }}
           >
             <button
-              onClick={scrollToAbout}
               className="bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary/90 transition-all duration-200 flex items-center space-x-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
             >
               <span>View My Work</span>
@@ -72,7 +57,6 @@ export function HeroSection() {
             </button>
             
             <button
-              onClick={scrollToContact}
               className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-200 flex items-center space-x-2 transform hover:-translate-y-1"
             >
               <Mail className="h-5 w-5" />
@@ -94,22 +78,37 @@ export function HeroSection() {
             </div>
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div 
-            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.8, delay: 1.2 }}
-          >
-            <motion.button
-              onClick={scrollToAbout}
-              className="text-muted-foreground hover:text-primary transition-colors duration-200"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ duration: 2, repeat: Infinity }}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <motion.div 
+              className="bg-card border border-border rounded-xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.2 }}
             >
-              <ArrowDown className="h-6 w-6" />
-            </motion.button>
-          </motion.div>
+              <h3 className="text-xl font-bold text-card-foreground mb-3">Machine Learning</h3>
+              <p className="text-muted-foreground">Advanced ML models and algorithms for predictive analytics and pattern recognition.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-card border border-border rounded-xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.4 }}
+            >
+              <h3 className="text-xl font-bold text-card-foreground mb-3">Data Visualization</h3>
+              <p className="text-muted-foreground">Interactive dashboards and compelling visualizations that tell data stories.</p>
+            </motion.div>
+
+            <motion.div 
+              className="bg-card border border-border rounded-xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 1.6 }}
+            >
+              <h3 className="text-xl font-bold text-card-foreground mb-3">Business Intelligence</h3>
+              <p className="text-muted-foreground">Strategic insights and data-driven recommendations for business growth.</p>
+            </motion.div>
+          </div>
         </div>
       </div>
 

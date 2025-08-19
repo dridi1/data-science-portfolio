@@ -14,11 +14,11 @@ interface ContactFormData {
 }
 
 export function ContactSection() {
-  const t = useTranslations('contact');
+  const t = useTranslations('contact};
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle};
 
   const {
     register,
@@ -35,14 +35,14 @@ export function ContactSection() {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       console.log('Form submitted:', data);
-      setSubmitStatus('success');
+      setSubmitStatus('success};
       reset();
       
       // Reset status after 5 seconds
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setTimeout(() => setSubmitStatus('idle}, 5000);
     } catch {
-      setSubmitStatus('error');
-      setTimeout(() => setSubmitStatus('idle'), 5000);
+      setSubmitStatus('error};
+      setTimeout(() => setSubmitStatus('idle}, 5000);
     } finally {
       setIsSubmitting(false);
     }
@@ -105,11 +105,11 @@ export function ContactSection() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('title')}
+              {t.title}}
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              {t('subtitle')}
+              {t.subtitle}}
             </p>
           </motion.div>
 
@@ -190,7 +190,7 @@ export function ContactSection() {
                     className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2 text-green-800"
                   >
                     <CheckCircle className="h-5 w-5" />
-                    <span>{t('success')}</span>
+                    <span>{t.success}}</span>
                   </motion.div>
                 )}
 
@@ -201,7 +201,7 @@ export function ContactSection() {
                     className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2 text-red-800"
                   >
                     <AlertCircle className="h-5 w-5" />
-                    <span>{t('error')}</span>
+                    <span>{t.error}}</span>
                   </motion.div>
                 )}
 
@@ -209,7 +209,7 @@ export function ContactSection() {
                   {/* Name Field */}
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium text-card-foreground mb-2">
-                      {t('name')} *
+                      {t.name}} *
                     </label>
                     <input
                       id="name"
@@ -229,7 +229,7 @@ export function ContactSection() {
                   {/* Email Field */}
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-card-foreground mb-2">
-                      {t('email')} *
+                      {t.email}} *
                     </label>
                     <input
                       id="email"
@@ -252,7 +252,7 @@ export function ContactSection() {
                   {/* Message Field */}
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-card-foreground mb-2">
-                      {t('message')} *
+                      {t.message}} *
                     </label>
                     <textarea
                       id="message"
@@ -278,12 +278,12 @@ export function ContactSection() {
                     {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-5 w-5 border-2 border-primary-foreground border-t-transparent"></div>
-                        <span>{t('sending')}</span>
+                        <span>{t.sending}}</span>
                       </>
                     ) : (
                       <>
                         <Send className="h-5 w-5" />
-                        <span>{t('send')}</span>
+                        <span>{t.send}}</span>
                       </>
                     )}
                   </button>

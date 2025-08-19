@@ -7,7 +7,7 @@ import { useRef } from 'react';
 import { Building, Calendar, MapPin, Award } from 'lucide-react';
 
 export function ExperienceSection() {
-  const t = useTranslations('experience');
+  const t = useTranslations('experience};
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -110,7 +110,7 @@ export function ExperienceSection() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('title')}
+              {t.title}}
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">

@@ -1,11 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/navigation';
 import { Menu, X, Sun, Moon, Globe } from 'lucide-react';
 import { useTheme } from 'next-themes';
-import { useRouter, usePathname } from 'next/navigation';
 
 interface HeaderProps {
   locale: string;
@@ -15,28 +12,19 @@ export function Header({ locale }: HeaderProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
-  const t = useTranslations('navigation');
-  const router = useRouter();
-  const pathname = usePathname();
 
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const navigation = [
-    { name: t('home'), href: '#home' },
-    { name: t('about'), href: '#about' },
-    { name: t('skills'), href: '#skills' },
-    { name: t('experience'), href: '#experience' },
-    { name: t('projects'), href: '#projects' },
-    { name: t('contact'), href: '#contact' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Contact', href: '#contact' },
   ];
-
-  const toggleLanguage = () => {
-    const newLocale = locale === 'en' ? 'fr' : 'en';
-    const newPath = pathname.replace(`/${locale}`, `/${newLocale}`);
-    router.push(newPath);
-  };
 
   const scrollToSection = (href: string) => {
     if (href.startsWith('#')) {
@@ -53,9 +41,9 @@ export function Header({ locale }: HeaderProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-primary">
+          <div className="text-xl font-bold text-primary">
             DS Portfolio
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
@@ -89,7 +77,6 @@ export function Header({ locale }: HeaderProps) {
 
             {/* Language Toggle */}
             <button
-              onClick={toggleLanguage}
               className="flex items-center space-x-1 p-2 rounded-md hover:bg-secondary transition-colors duration-200"
               aria-label="Toggle language"
             >
@@ -146,11 +133,10 @@ export function Header({ locale }: HeaderProps) {
 
                 {/* Language Toggle */}
                 <button
-                  onClick={toggleLanguage}
                   className="flex items-center space-x-2 p-2 rounded-md hover:bg-secondary transition-colors duration-200"
                 >
                   <Globe className="h-5 w-5" />
-                  <span>{locale === 'en' ? 'Français' : 'English'}</span>
+                  <span>English</span>
                 </button>
               </div>
             </div>

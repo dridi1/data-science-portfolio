@@ -1,13 +1,17 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { GraduationCap, Heart, Target } from 'lucide-react';
 
 export function AboutSection() {
-  const t = useTranslations('about');
+  const t = { 
+    title: 'About Me',
+    description: "I'm a data scientist with a passion for uncovering insights from complex datasets. With a strong background in statistics, machine learning, and business analytics, I help organizations make data-driven decisions that drive growth and innovation.",
+    background: 'Background',
+    interests: 'Interests'
+  };
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
@@ -47,7 +51,7 @@ export function AboutSection() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('title')}
+              {t.title}}
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
           </motion.div>
@@ -75,7 +79,7 @@ export function AboutSection() {
             <motion.div variants={itemVariants} className="order-1 lg:order-2 space-y-8">
               <div>
                 <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                  {t('description')}
+                  {t.description}
                 </p>
               </div>
 
@@ -85,7 +89,7 @@ export function AboutSection() {
                   <div className="flex items-center mb-4">
                     <GraduationCap className="h-6 w-6 text-primary mr-3" />
                     <h3 className="text-xl font-semibold text-card-foreground">
-                      {t('background')}
+                      {t.background}}
                     </h3>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">
@@ -100,7 +104,7 @@ export function AboutSection() {
                   <div className="flex items-center mb-4">
                     <Heart className="h-6 w-6 text-primary mr-3" />
                     <h3 className="text-xl font-semibold text-card-foreground">
-                      {t('interests')}
+                      {t.interests}}
                     </h3>
                   </div>
                   <ul className="space-y-2 text-muted-foreground">

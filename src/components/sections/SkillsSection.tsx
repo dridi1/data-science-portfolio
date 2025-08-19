@@ -1,19 +1,25 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Code, Database, BarChart3, Cloud, Cpu, PieChart } from 'lucide-react';
 
 export function SkillsSection() {
-  const t = useTranslations('skills');
+  const t = {
+    title: 'Technical Skills',
+    programming: 'Programming Languages',
+    dataScience: 'Data Science & ML',
+    tools: 'Tools & Platforms',
+    databases: 'Databases',
+    cloud: 'Cloud Platforms'
+  };
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   const skillCategories = [
     {
-      title: t('programming'),
+      title: t.programming},
       icon: Code,
       skills: [
         { name: 'Python', level: 95 },
@@ -23,7 +29,7 @@ export function SkillsSection() {
       ],
     },
     {
-      title: t('dataScience'),
+      title: t.dataScience},
       icon: BarChart3,
       skills: [
         { name: 'Machine Learning', level: 90 },
@@ -33,7 +39,7 @@ export function SkillsSection() {
       ],
     },
     {
-      title: t('tools'),
+      title: t.tools},
       icon: PieChart,
       skills: [
         { name: 'Power BI', level: 85 },
@@ -43,7 +49,7 @@ export function SkillsSection() {
       ],
     },
     {
-      title: t('databases'),
+      title: t.databases},
       icon: Database,
       skills: [
         { name: 'SQL Server', level: 85 },
@@ -53,7 +59,7 @@ export function SkillsSection() {
       ],
     },
     {
-      title: t('cloud'),
+      title: t.cloud},
       icon: Cloud,
       skills: [
         { name: 'AWS', level: 80 },
@@ -112,7 +118,7 @@ export function SkillsSection() {
           {/* Section Header */}
           <motion.div variants={itemVariants} className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              {t('title')}
+              {t.title}}
             </h2>
             <div className="w-24 h-1 bg-primary mx-auto mb-6"></div>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
