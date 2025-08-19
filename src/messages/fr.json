@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Professionnel en Science des Données",
+    "title": "Data Scientist & Expert en Analytique",
+    "description": "Je transforme les données en insights actionnables en utilisant l'apprentissage automatique, l'analyse statistique et des techniques de visualisation avancées pour guider les décisions d'affaires.",
+    "cta": "Voir Mon Travail",
+    "contact": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Passionné par l'extraction d'insights à partir des données",
+    "description": "Je suis un professionnel dévoué en science des données avec une expertise en apprentissage automatique, analyse statistique et visualisation de données. Avec une solide expérience en Python, R et SQL, j'aide les organisations à prendre des décisions basées sur les données qui stimulent la croissance et l'innovation.",
+    "experience_years": "5+",
+    "experience_label": "Années d'Expérience",
+    "projects_count": "20+",
+    "projects_label": "Projets Complétés",
+    "clients_count": "15+",
+    "clients_label": "Clients Satisfaits"
+  },
+  "skills": {
+    "title": "Compétences & Expertise",
+    "subtitle": "Technologies et outils avec lesquels je travaille",
+    "categories": {
+      "programming": "Langages de Programmation",
+      "dataScience": "Science des Données & ML",
+      "tools": "Outils & Plateformes",
+      "databases": "Bases de Données",
+      "cloud": "Cloud & DevOps"
+    },
+    "items": {
+      "python": "Python",
+      "r": "R",
+      "sql": "SQL",
+      "javascript": "JavaScript",
+      "machineLearning": "Apprentissage Automatique",
+      "statisticalAnalysis": "Analyse Statistique",
+      "dataVisualization": "Visualisation de Données",
+      "deepLearning": "Apprentissage Profond",
+      "powerBI": "Power BI",
+      "tableau": "Tableau",
+      "excel": "Excel",
+      "git": "Git",
+      "sqlServer": "SQL Server",
+      "postgresql": "PostgreSQL",
+      "mongodb": "MongoDB",
+      "aws": "AWS",
+      "azure": "Azure",
+      "googleCloud": "Google Cloud"
+    }
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Mon parcours en science des données et analytique"
+  },
+  "projects": {
+    "title": "Projets Sélectionnés",
+    "subtitle": "Applications réelles de la science des données",
+    "viewProject": "Voir le Projet",
+    "liveDemo": "Démo en Direct",
+    "sourceCode": "Code Source"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "Discutons de vos besoins en science des données",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Téléphone",
+      "location": "Localisation"
+    }
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre"
+  },
+  "language": {
+    "english": "English",
+    "french": "Français"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "backToTop": "Retour en Haut"
+  }
+}
