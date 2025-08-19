@@ -1,23 +1,20 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
 import { ThemeToggle } from '../ui/theme-toggle';
-import { LanguageToggle } from '../ui/language-toggle';
 import { cn } from '@/lib/utils';
 
 const navItems = [
-  { id: 'home', href: '#home' },
-  { id: 'about', href: '#about' },
-  { id: 'skills', href: '#skills' },
-  { id: 'experience', href: '#experience' },
-  { id: 'projects', href: '#projects' },
-  { id: 'contact', href: '#contact' },
+  { id: 'home', href: '#home', label: 'Home' },
+  { id: 'about', href: '#about', label: 'About' },
+  { id: 'skills', href: '#skills', label: 'Skills' },
+  { id: 'experience', href: '#experience', label: 'Experience' },
+  { id: 'projects', href: '#projects', label: 'Projects' },
+  { id: 'contact', href: '#contact', label: 'Contact' },
 ];
 
 export function Navigation() {
-  const t = useTranslations('navigation');
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
@@ -80,22 +77,20 @@ export function Navigation() {
                       : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                   )}
                 >
-                  {t(item.id as any)}
+                  {item.label}
                 </button>
               ))}
             </div>
           </div>
 
-          {/* Theme and Language Toggle */}
+          {/* Theme Toggle */}
           <div className="hidden md:flex items-center space-x-2">
             <ThemeToggle />
-            <LanguageToggle />
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
             <ThemeToggle />
-            <LanguageToggle />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
@@ -120,7 +115,7 @@ export function Navigation() {
                       : "text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                   )}
                 >
-                  {t(item.id as any)}
+                  {item.label}
                 </button>
               ))}
             </div>

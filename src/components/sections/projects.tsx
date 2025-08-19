@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, BarChart3, Database, Brain, TrendingUp } from 'lucide-react';
 import { 
@@ -19,8 +18,6 @@ import {
 } from 'recharts';
 
 export function ProjectsSection() {
-  const t = useTranslations('projects');
-
   // Sample data for visualizations
   const salesData = [
     { month: 'Jan', sales: 4000, profit: 2400 },
@@ -186,7 +183,7 @@ export function ProjectsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+            Featured Projects
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             Showcase of data science projects demonstrating real-world impact and technical expertise
@@ -271,11 +268,11 @@ export function ProjectsSection() {
                 <div className="flex gap-3">
                   <button className="flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors">
                     <ExternalLink className="h-4 w-4 mr-2" />
-                    {t('view_project')}
+                    View Project
                   </button>
                   <button className="flex items-center px-4 py-2 border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-blue-400 rounded-lg transition-colors">
                     <Github className="h-4 w-4 mr-2" />
-                    {t('view_code')}
+                    View Code
                   </button>
                 </div>
               </div>

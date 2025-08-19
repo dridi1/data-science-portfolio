@@ -1,16 +1,13 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Code, Database, Cloud, Wrench, BarChart3 } from 'lucide-react';
 
 export function SkillsSection() {
-  const t = useTranslations('skills');
-
   const skillCategories = [
     {
       icon: Code,
-      title: t('programming'),
+      title: 'Programming Languages',
       skills: [
         { name: 'Python', level: 95 },
         { name: 'R', level: 90 },
@@ -21,7 +18,7 @@ export function SkillsSection() {
     },
     {
       icon: BarChart3,
-      title: t('frameworks'),
+      title: 'Frameworks & Libraries',
       skills: [
         { name: 'TensorFlow', level: 85 },
         { name: 'PyTorch', level: 80 },
@@ -32,7 +29,7 @@ export function SkillsSection() {
     },
     {
       icon: Database,
-      title: t('databases'),
+      title: 'Databases',
       skills: [
         { name: 'PostgreSQL', level: 85 },
         { name: 'MongoDB', level: 80 },
@@ -43,7 +40,7 @@ export function SkillsSection() {
     },
     {
       icon: Wrench,
-      title: t('tools'),
+      title: 'Tools & Platforms',
       skills: [
         { name: 'Power BI', level: 90 },
         { name: 'Tableau', level: 85 },
@@ -54,7 +51,7 @@ export function SkillsSection() {
     },
     {
       icon: Cloud,
-      title: t('cloud'),
+      title: 'Cloud Services',
       skills: [
         { name: 'AWS', level: 85 },
         { name: 'Azure', level: 80 },
@@ -76,7 +73,7 @@ export function SkillsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+            Technical Skills
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A comprehensive overview of my technical expertise across various domains

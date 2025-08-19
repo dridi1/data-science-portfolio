@@ -1,12 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Calendar, MapPin, Building } from 'lucide-react';
 
 export function ExperienceSection() {
-  const t = useTranslations('experience');
-
   const experiences = [
     {
       title: 'Senior Data Scientist',
@@ -77,7 +74,7 @@ export function ExperienceSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+            Professional Experience
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
             A journey through my professional growth in data science and analytics

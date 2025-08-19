@@ -1,12 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
-import { ChevronDown, Mail, Download } from 'lucide-react';
+import { ChevronDown, Mail } from 'lucide-react';
 
 export function HeroSection() {
-  const t = useTranslations('hero');
-
   const scrollToNext = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -66,7 +63,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            {t('title')}
+            Data Science Professional
           </motion.h1>
           
           <motion.p
@@ -75,7 +72,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            {t('subtitle')}
+            Transforming data into actionable insights with advanced analytics and machine learning
           </motion.p>
 
           <motion.div
@@ -88,7 +85,7 @@ export function HeroSection() {
               onClick={scrollToNext}
               className="inline-flex items-center px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors shadow-lg hover:shadow-xl"
             >
-              {t('cta')}
+              View My Work
               <ChevronDown className="ml-2 h-5 w-5" />
             </button>
             
@@ -97,7 +94,7 @@ export function HeroSection() {
               className="inline-flex items-center px-8 py-3 bg-transparent border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:border-blue-600 dark:hover:border-blue-400 font-medium rounded-lg transition-colors"
             >
               <Mail className="mr-2 h-5 w-5" />
-              {t('contact')}
+              Get In Touch
             </button>
           </motion.div>
         </motion.div>

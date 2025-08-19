@@ -1,17 +1,13 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { MapPin, Calendar, Award } from 'lucide-react';
-import Image from 'next/image';
 
 export function AboutSection() {
-  const t = useTranslations('about');
-
   const stats = [
     {
       icon: Calendar,
-      label: t('experience_years'),
+      label: 'Years of Experience',
       value: '5+'
     },
     {
@@ -21,7 +17,7 @@ export function AboutSection() {
     },
     {
       icon: MapPin,
-      label: t('location'),
+      label: 'Location',
       value: 'Remote / Global'
     }
   ];
@@ -37,7 +33,7 @@ export function AboutSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+            About Me
           </h2>
         </motion.div>
 
@@ -85,7 +81,7 @@ export function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-              {t('description')}
+              Passionate data scientist with expertise in statistical analysis, machine learning, and data visualization. I specialize in transforming complex datasets into actionable business insights.
             </p>
 
             {/* Stats */}
@@ -113,7 +109,7 @@ export function AboutSection() {
             {/* Core Competencies */}
             <div className="mt-8">
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
-                {t('skills_title')}
+                Core Competencies
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[

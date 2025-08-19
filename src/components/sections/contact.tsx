@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -17,7 +16,6 @@ const contactSchema = z.object({
 type ContactForm = z.infer<typeof contactSchema>;
 
 export function ContactSection() {
-  const t = useTranslations('contact');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -103,10 +101,10 @@ export function ContactSection() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            {t('title')}
+            Get In Touch
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            {t('description')}
+            Let's discuss how we can work together on your next data science project.
           </p>
         </motion.div>
 
@@ -219,7 +217,7 @@ export function ContactSection() {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  {t('form.name')}
+                  Name
                 </label>
                 <input
                   {...register('name')}
@@ -237,7 +235,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  {t('form.email')}
+                  Email
                 </label>
                 <input
                   {...register('email')}
@@ -255,7 +253,7 @@ export function ContactSection() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  {t('form.message')}
+                  Message
                 </label>
                 <textarea
                   {...register('message')}
@@ -279,12 +277,12 @@ export function ContactSection() {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
-                    {t('form.sending')}
+                    Sending...
                   </>
                 ) : (
                   <>
                     <Send className="h-5 w-5 mr-2" />
-                    {t('form.send')}
+                    Send Message
                   </>
                 )}
               </button>
@@ -295,7 +293,7 @@ export function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-lg"
                 >
-                  {t('form.success')}
+                  Message sent successfully!
                 </motion.div>
               )}
 
@@ -305,7 +303,7 @@ export function ContactSection() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-lg"
                 >
-                  {t('form.error')}
+                  Failed to send message. Please try again.
                 </motion.div>
               )}
             </form>
