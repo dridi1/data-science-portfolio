@@ -1,20 +1,23 @@
 'use client';
 
 import { useState } from 'react';
-import { useTranslations } from 'next-intl';
 import { useTheme } from 'next-themes';
-import { Moon, Sun, Menu, X, Globe } from 'lucide-react';
-import { Link, usePathname } from '@/lib/routing';
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const navItems = ['home', 'about', 'skills', 'experience', 'projects', 'contact'];
+const navItems = [
+  { id: 'home', label: 'Home' },
+  { id: 'about', label: 'About' },
+  { id: 'skills', label: 'Skills' },
+  { id: 'experience', label: 'Experience' },
+  { id: 'projects', label: 'Projects' },
+  { id: 'data-viz', label: 'Data Viz' },
+  { id: 'contact', label: 'Contact' }
+];
 
 export default function Navbar() {
-  const t = useTranslations('nav');
   const { theme, setTheme } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
-  const [isLangOpen, setIsLangOpen] = useState(false);
-  const pathname = usePathname();
 
   const scrollToSection = (sectionId: string) => {
     if (sectionId === 'home') {
@@ -33,64 +36,25 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="text-xl font-bold text-primary">
+          <div className="text-xl font-bold text-primary cursor-pointer" onClick={() => scrollToSection('home')}>
             Alex Dridi
-          </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <button
-                key={item}
-                onClick={() => scrollToSection(item)}
-                className="text-foreground hover:text-primary transition-colors capitalize"
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className="text-foreground hover:text-primary transition-colors"
               >
-                {t(item)}
+                {item.label}
               </button>
             ))}
           </div>
 
-          {/* Theme Toggle & Language Switcher */}
+          {/* Theme Toggle */}
           <div className="hidden md:flex items-center space-x-4">
-            {/* Language Switcher */}
-            <div className="relative">
-              <button
-                onClick={() => setIsLangOpen(!isLangOpen)}
-                className="p-2 rounded-md hover:bg-accent"
-                aria-label="Language"
-              >
-                <Globe className="h-5 w-5" />
-              </button>
-              <AnimatePresence>
-                {isLangOpen && (
-                  <motion.div
-                    initial={{ opacity: 0, y: -10 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: -10 }}
-                    className="absolute right-0 mt-2 w-32 bg-background border border-border rounded-md shadow-lg"
-                  >
-                    <Link
-                      href={pathname}
-                      locale="en"
-                      className="block px-4 py-2 text-sm hover:bg-accent"
-                      onClick={() => setIsLangOpen(false)}
-                    >
-                      English
-                    </Link>
-                    <Link
-                      href={pathname}
-                      locale="fr"
-                      className="block px-4 py-2 text-sm hover:bg-accent"
-                      onClick={() => setIsLangOpen(false)}
-                    >
-                      Français
-                    </Link>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </div>
-
-            {/* Theme Toggle */}
             <button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               className="p-2 rounded-md hover:bg-accent"
@@ -125,32 +89,14 @@ export default function Navbar() {
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navItems.map((item) => (
                 <button
-                  key={item}
-                  onClick={() => scrollToSection(item)}
-                  className="block w-full text-left px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-accent rounded-md capitalize"
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="block w-full text-left px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-accent rounded-md"
                 >
-                  {t(item)}
+                  {item.label}
                 </button>
               ))}
               <div className="flex items-center justify-between px-3 py-2">
-                <div className="flex items-center space-x-4">
-                  <Link
-                    href={pathname}
-                    locale="en"
-                    className="text-sm hover:text-primary"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    EN
-                  </Link>
-                  <Link
-                    href={pathname}
-                    locale="fr"
-                    className="text-sm hover:text-primary"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    FR
-                  </Link>
-                </div>
                 <button
                   onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                   className="p-2 rounded-md hover:bg-accent"

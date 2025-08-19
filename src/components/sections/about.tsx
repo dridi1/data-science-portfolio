@@ -1,17 +1,14 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { CheckCircle, MapPin, Mail } from 'lucide-react';
 
 export default function About() {
-  const t = useTranslations('about');
-
   const highlights = [
-    t('highlights.0'),
-    t('highlights.1'),
-    t('highlights.2'),
-    t('highlights.3')
+    "5+ years in Data Science & Analytics",
+    "Expert in Python, R, and SQL", 
+    "Machine Learning & Statistical Modeling",
+    "Data Visualization & Business Intelligence"
   ];
 
   return (
@@ -25,7 +22,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t('title')}
+            About Me
           </h2>
         </motion.div>
 
@@ -37,7 +34,7 @@ export default function About() {
             viewport={{ once: true }}
           >
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              {t('description')}
+              With over 5 years of experience in data science and analytics, I specialize in extracting meaningful insights from complex datasets. My background combines strong technical skills with business acumen to deliver impactful solutions.
             </p>
 
             <div className="space-y-4 mb-8">
@@ -65,7 +62,7 @@ export default function About() {
                 className="flex items-center space-x-3 text-muted-foreground"
               >
                 <MapPin className="h-5 w-5" />
-                <span>{t('location')}</span>
+                <span>Based in Tunisia</span>
               </motion.div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -75,7 +72,7 @@ export default function About() {
                 className="flex items-center space-x-3 text-muted-foreground"
               >
                 <Mail className="h-5 w-5" />
-                <span>{t('email')}</span>
+                <span>alex.dridi@email.com</span>
               </motion.div>
             </div>
           </motion.div>

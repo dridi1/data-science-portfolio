@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
@@ -14,7 +13,6 @@ interface FormData {
 }
 
 export default function Contact() {
-  const t = useTranslations('contact');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -51,10 +49,10 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t('title')}
+            Get In Touch
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            {t('description')}
+            Let&apos;s discuss how I can help with your data science and analytics needs.
           </p>
         </motion.div>
 
@@ -74,7 +72,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Email</h3>
-                  <p className="text-muted-foreground">{t('info.email')}</p>
+                  <p className="text-muted-foreground">alex.dridi@email.com</p>
                 </div>
               </div>
 
@@ -84,7 +82,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">Location</h3>
-                  <p className="text-muted-foreground">{t('info.location')}</p>
+                  <p className="text-muted-foreground">Tunisia</p>
                 </div>
               </div>
 
@@ -94,7 +92,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-foreground">LinkedIn</h3>
-                  <p className="text-muted-foreground">{t('info.linkedin')}</p>
+                  <p className="text-muted-foreground">linkedin.com/in/alex-dridi</p>
                 </div>
               </div>
             </div>
@@ -131,14 +129,14 @@ export default function Contact() {
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.name')}
+                    Full Name
                   </label>
                   <input
                     type="text"
                     id="name"
                     {...register('name', { required: 'Name is required' })}
                     className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background"
-                    placeholder={t('form.name')}
+                    placeholder="Full Name"
                   />
                   {errors.name && (
                     <p className="mt-1 text-sm text-red-500">{errors.name.message}</p>
@@ -147,7 +145,7 @@ export default function Contact() {
 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                    {t('form.email')}
+                    Email Address
                   </label>
                   <input
                     type="email"
@@ -160,7 +158,7 @@ export default function Contact() {
                       }
                     })}
                     className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background"
-                    placeholder={t('form.email')}
+                    placeholder="Email Address"
                   />
                   {errors.email && (
                     <p className="mt-1 text-sm text-red-500">{errors.email.message}</p>
@@ -170,14 +168,14 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.subject')}
+                  Subject
                 </label>
                 <input
                   type="text"
                   id="subject"
                   {...register('subject', { required: 'Subject is required' })}
                   className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background"
-                  placeholder={t('form.subject')}
+                  placeholder="Subject"
                 />
                 {errors.subject && (
                   <p className="mt-1 text-sm text-red-500">{errors.subject.message}</p>
@@ -186,14 +184,14 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  {t('form.message')}
+                  Message
                 </label>
                 <textarea
                   id="message"
                   rows={6}
                   {...register('message', { required: 'Message is required' })}
                   className="w-full px-3 py-2 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent bg-background resize-none"
-                  placeholder={t('form.message')}
+                  placeholder="Message"
                 />
                 {errors.message && (
                   <p className="mt-1 text-sm text-red-500">{errors.message.message}</p>
@@ -208,12 +206,12 @@ export default function Contact() {
                 {isSubmitting ? (
                   <>
                     <div className="animate-spin rounded-full h-4 w-4 border-2 border-primary-foreground border-t-transparent mr-2" />
-                    {t('form.sending')}
+                    Sending...
                   </>
                 ) : (
                   <>
                     <Send className="mr-2 h-4 w-4" />
-                    {t('form.send')}
+                    Send Message
                   </>
                 )}
               </button>
@@ -225,7 +223,7 @@ export default function Contact() {
                   animate={{ opacity: 1, y: 0 }}
                   className="p-4 bg-green-100 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-md text-green-800 dark:text-green-200 text-center"
                 >
-                  {t('form.success')}
+                  Message sent successfully!
                 </motion.div>
               )}
             </form>

@@ -1,37 +1,34 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { Calendar, Building, Award } from 'lucide-react';
 
+const positions = [
+  {
+    title: "Senior Data Scientist",
+    company: "Tech Solutions Inc.",
+    period: "2022 - Present",
+    description: "Leading data science initiatives and developing predictive models for business optimization.",
+    achievements: [
+      "Developed ML models that increased customer retention by 25%",
+      "Built automated reporting systems reducing manual work by 80%",
+      "Led a team of 3 junior data scientists"
+    ]
+  },
+  {
+    title: "Data Analyst",
+    company: "Analytics Pro",
+    period: "2020 - 2022",
+    description: "Performed statistical analysis and created data visualizations for business insights.",
+    achievements: [
+      "Created interactive dashboards for executive reporting",
+      "Improved data processing efficiency by 40%",
+      "Conducted A/B testing for product optimization"
+    ]
+  }
+];
+
 export default function Experience() {
-  const t = useTranslations('experience');
-
-  const positions = [
-    {
-      title: t('positions.0.title'),
-      company: t('positions.0.company'),
-      period: t('positions.0.period'),
-      description: t('positions.0.description'),
-      achievements: [
-        t('positions.0.achievements.0'),
-        t('positions.0.achievements.1'),
-        t('positions.0.achievements.2')
-      ]
-    },
-    {
-      title: t('positions.1.title'),
-      company: t('positions.1.company'),
-      period: t('positions.1.period'),
-      description: t('positions.1.description'),
-      achievements: [
-        t('positions.1.achievements.0'),
-        t('positions.1.achievements.1'),
-        t('positions.1.achievements.2')
-      ]
-    }
-  ];
-
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -43,7 +40,7 @@ export default function Experience() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t('title')}
+            Professional Experience
           </h2>
         </motion.div>
 

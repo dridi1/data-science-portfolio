@@ -1,12 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 
 export default function Hero() {
-  const t = useTranslations('hero');
-
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
     if (element) {
@@ -30,12 +27,12 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <p className="text-lg text-muted-foreground mb-2">{t('greeting')}</p>
+            <p className="text-lg text-muted-foreground mb-2">Hello, I&apos;m</p>
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground mb-4">
-              {t('name')}
+              Alex Dridi
             </h1>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-primary mb-6">
-              {t('title')}
+              Data Scientist & Analytics Expert
             </h2>
           </motion.div>
 
@@ -45,7 +42,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
           >
-            {t('description')}
+            Passionate about transforming data into actionable insights. Specialized in machine learning, statistical analysis, and data visualization to drive business decisions.
           </motion.p>
 
           <motion.div
@@ -58,7 +55,7 @@ export default function Hero() {
               onClick={scrollToProjects}
               className="group inline-flex items-center px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
             >
-              {t('viewProjects')}
+              View My Projects
               <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </button>
             
@@ -66,7 +63,7 @@ export default function Hero() {
               onClick={scrollToContact}
               className="inline-flex items-center px-6 py-3 border border-border rounded-lg hover:bg-accent transition-colors font-medium"
             >
-              {t('contactMe')}
+              Contact Me
             </button>
 
             <a

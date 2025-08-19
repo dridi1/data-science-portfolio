@@ -1,45 +1,42 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, TrendingUp } from 'lucide-react';
 
+const projects = [
+  {
+    title: "Customer Segmentation Analysis",
+    description: "Machine learning project to segment customers based on behavior patterns using clustering algorithms.",
+    technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
+    highlights: [
+      "Identified 5 distinct customer segments",
+      "Improved marketing ROI by 30%",
+      "Automated segmentation pipeline"
+    ]
+  },
+  {
+    title: "Sales Forecasting Model",
+    description: "Time series analysis and forecasting model to predict monthly sales with 95% accuracy.",
+    technologies: ['R', 'Prophet', 'ggplot2', 'Shiny'],
+    highlights: [
+      "95% forecasting accuracy",
+      "Interactive dashboard for stakeholders",
+      "Reduced inventory costs by 20%"
+    ]
+  },
+  {
+    title: "Real-time Analytics Dashboard",
+    description: "Business intelligence dashboard providing real-time insights into key performance metrics.",
+    technologies: ['Power BI', 'SQL Server', 'DAX', 'Azure'],
+    highlights: [
+      "Real-time data processing",
+      "Executive-level reporting",
+      "Automated alert system"
+    ]
+  }
+];
+
 export default function Projects() {
-  const t = useTranslations('projects');
-
-  const projects = [
-    {
-      title: t('items.0.title'),
-      description: t('items.0.description'),
-      technologies: ['Python', 'Scikit-learn', 'Pandas', 'Matplotlib'],
-      highlights: [
-        t('items.0.highlights.0'),
-        t('items.0.highlights.1'),
-        t('items.0.highlights.2')
-      ]
-    },
-    {
-      title: t('items.1.title'),
-      description: t('items.1.description'),
-      technologies: ['R', 'Prophet', 'ggplot2', 'Shiny'],
-      highlights: [
-        t('items.1.highlights.0'),
-        t('items.1.highlights.1'),
-        t('items.1.highlights.2')
-      ]
-    },
-    {
-      title: t('items.2.title'),
-      description: t('items.2.description'),
-      technologies: ['Power BI', 'SQL Server', 'DAX', 'Azure'],
-      highlights: [
-        t('items.2.highlights.0'),
-        t('items.2.highlights.1'),
-        t('items.2.highlights.2')
-      ]
-    }
-  ];
-
   return (
     <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
@@ -51,7 +48,7 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t('title')}
+            Featured Projects
           </h2>
         </motion.div>
 

@@ -1,6 +1,5 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
 import { motion } from 'framer-motion';
 import { 
   Code, 
@@ -13,35 +12,56 @@ import {
 const skillCategories = [
   {
     key: 'programming',
+    title: 'Programming Languages',
     icon: Code,
-    skills: ['python', 'r', 'sql', 'javascript'],
+    skills: [
+      { name: 'Python', level: 5 },
+      { name: 'R', level: 4 },
+      { name: 'SQL', level: 5 },
+      { name: 'JavaScript', level: 3 }
+    ],
     color: 'text-blue-500'
   },
   {
     key: 'dataScience',
+    title: 'Data Science & ML',
     icon: Brain,
-    skills: ['machineLearning', 'statistics', 'dataViz', 'deepLearning'],
+    skills: [
+      { name: 'Machine Learning', level: 5 },
+      { name: 'Statistical Analysis', level: 5 },
+      { name: 'Data Visualization', level: 4 },
+      { name: 'Deep Learning', level: 4 }
+    ],
     color: 'text-green-500'
   },
   {
     key: 'tools',
+    title: 'Tools & Platforms',
     icon: Settings,
-    skills: ['powerBI', 'tableau', 'excel', 'git'],
+    skills: [
+      { name: 'Power BI', level: 5 },
+      { name: 'Tableau', level: 4 },
+      { name: 'Excel', level: 5 },
+      { name: 'Git', level: 4 }
+    ],
     color: 'text-purple-500'
   },
   {
     key: 'databases',
+    title: 'Databases',
     icon: Database,
-    skills: ['sqlServer', 'postgresql', 'mongodb'],
+    skills: [
+      { name: 'SQL Server', level: 5 },
+      { name: 'PostgreSQL', level: 4 },
+      { name: 'MongoDB', level: 3 }
+    ],
     color: 'text-orange-500'
   }
 ];
 
-const cloudSkills = ['aws', 'azure', 'gcp'];
+const cloudSkills = ['AWS', 'Azure', 'Google Cloud'];
 
 export default function Skills() {
-  const t = useTranslations('skills');
-
   return (
     <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
       <div className="max-w-7xl mx-auto">
@@ -53,7 +73,7 @@ export default function Skills() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">
-            {t('title')}
+            Technical Skills
           </h2>
         </motion.div>
 
@@ -72,13 +92,13 @@ export default function Skills() {
                 <div className="flex items-center mb-4">
                   <IconComponent className={`h-6 w-6 ${category.color} mr-3`} />
                   <h3 className="text-lg font-semibold text-foreground">
-                    {t(`categories.${category.key}`)}
+                    {category.title}
                   </h3>
                 </div>
                 <div className="space-y-3">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
-                      key={skill}
+                      key={skill.name}
                       initial={{ opacity: 0, x: -20 }}
                       whileInView={{ opacity: 1, x: 0 }}
                       transition={{ 
@@ -88,7 +108,7 @@ export default function Skills() {
                       viewport={{ once: true }}
                       className="flex items-center justify-between"
                     >
-                      <span className="text-muted-foreground">{t(`items.${skill}`)}</span>
+                      <span className="text-muted-foreground">{skill.name}</span>
                       <div className="flex space-x-1">
                         {[...Array(5)].map((_, i) => (
                           <motion.div
@@ -101,7 +121,7 @@ export default function Skills() {
                             }}
                             viewport={{ once: true }}
                             className={`w-2 h-2 rounded-full ${
-                              i < 4 ? 'bg-primary' : 'bg-muted'
+                              i < skill.level ? 'bg-primary' : 'bg-muted'
                             }`}
                           />
                         ))}
@@ -138,7 +158,7 @@ export default function Skills() {
                 viewport={{ once: true }}
                 className="px-4 py-2 bg-sky-100 dark:bg-sky-900/20 rounded-full text-sky-700 dark:text-sky-300 font-medium"
               >
-                {t(`items.${skill}`)}
+                {skill}
               </motion.div>
             ))}
           </div>
