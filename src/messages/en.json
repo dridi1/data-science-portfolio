@@ -1,0 +1,63 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Data Science Professional",
+    "subtitle": "Transforming data into actionable insights with advanced analytics and machine learning",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "Passionate data scientist with expertise in statistical analysis, machine learning, and data visualization. I specialize in transforming complex datasets into actionable business insights.",
+    "skills_title": "Core Competencies",
+    "location": "Location",
+    "experience_years": "Years of Experience"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "programming": "Programming Languages",
+    "frameworks": "Frameworks & Libraries",
+    "databases": "Databases",
+    "tools": "Tools & Platforms",
+    "cloud": "Cloud Services"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "view_project": "View Project",
+    "view_code": "View Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "description": "Let's discuss how we can work together on your next data science project.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    }
+  },
+  "theme": {
+    "toggle": "Toggle theme",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "language": {
+    "toggle": "Toggle language",
+    "english": "English",
+    "french": "French"
+  }
+}

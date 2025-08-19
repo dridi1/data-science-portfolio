@@ -1,0 +1,63 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Professionnel Data Science",
+    "subtitle": "Transformer les données en insights exploitables avec l'analyse avancée et l'apprentissage automatique",
+    "cta": "Voir Mon Travail",
+    "contact": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Data scientist passionné avec une expertise en analyse statistique, apprentissage automatique et visualisation de données. Je me spécialise dans la transformation de jeux de données complexes en insights commerciaux exploitables.",
+    "skills_title": "Compétences Principales",
+    "location": "Localisation",
+    "experience_years": "Années d'Expérience"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "programming": "Langages de Programmation",
+    "frameworks": "Frameworks et Bibliothèques",
+    "databases": "Bases de Données",
+    "tools": "Outils et Plateformes",
+    "cloud": "Services Cloud"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "present": "Présent"
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "view_project": "Voir le Projet",
+    "view_code": "Voir le Code"
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "description": "Discutons de la façon dont nous pouvons travailler ensemble sur votre prochain projet de data science.",
+    "form": {
+      "name": "Nom",
+      "email": "Email",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    }
+  },
+  "theme": {
+    "toggle": "Basculer le thème",
+    "light": "Mode clair",
+    "dark": "Mode sombre"
+  },
+  "language": {
+    "toggle": "Changer de langue",
+    "english": "Anglais",
+    "french": "Français"
+  }
+}
