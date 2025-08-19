@@ -1,0 +1,122 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences", 
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Scientifique des Données",
+    "title": "Scientifique des Données & Expert en Analytique",
+    "description": "Passionné par la transformation des données en insights exploitables. Spécialisé dans l'apprentissage automatique, l'analyse statistique et la visualisation de données pour orienter les décisions d'affaires.",
+    "cta": "Voir Mon Travail",
+    "contact": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "subtitle": "Scientifique des Données Passionné",
+    "description": "Je suis un scientifique des données dévoué avec une expertise en Python, R et SQL. Ma passion réside dans la découverte de motifs dans des ensembles de données complexes et la construction de modèles prédictifs qui apportent de la valeur aux entreprises. Avec une expérience en apprentissage automatique, analyse statistique et visualisation de données, j'aide les organisations à prendre des décisions basées sur les données.",
+    "highlights": {
+      "experience": "5+ Années d'Expérience",
+      "projects": "50+ Projets Complétés",
+      "languages": "Multilingue (EN/FR)",
+      "tools": "Outils d'Analytique Avancés"
+    }
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Technologies et Outils",
+    "categories": {
+      "programming": "Langages de Programmation",
+      "dataScience": "Science des Données & ML",
+      "tools": "Outils et Plateformes",
+      "databases": "Bases de Données",
+      "cloud": "Plateformes Cloud"
+    }
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "subtitle": "Parcours de Carrière",
+    "positions": [
+      {
+        "title": "Scientifique des Données Senior",
+        "company": "Tech Solutions Inc.",
+        "period": "2022 - Présent",
+        "description": "Direction d'initiatives de science des données et développement de modèles d'apprentissage automatique pour l'optimisation d'affaires.",
+        "achievements": [
+          "Développé des modèles prédictifs améliorant la précision des prévisions de 25%",
+          "Dirigé une équipe multidisciplinaire de 5 analystes de données",
+          "Implémenté des rapports automatisés réduisant le travail manuel de 60%"
+        ]
+      },
+      {
+        "title": "Analyste de Données",
+        "company": "Analytics Corp",
+        "period": "2020 - 2022",
+        "description": "Analysé des ensembles de données complexes et créé des visualisations pour la prise de décision exécutive.",
+        "achievements": [
+          "Construit des tableaux de bord interactifs avec Power BI et Tableau",
+          "Effectué des analyses statistiques pour des campagnes de tests A/B",
+          "Amélioré les processus de qualité des données réduisant les erreurs de 40%"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets Sélectionnés",
+    "subtitle": "Portfolio de Science des Données",
+    "items": [
+      {
+        "title": "Analyse de Segmentation Client",
+        "description": "Modèle d'apprentissage automatique pour segmenter les clients basé sur les motifs de comportement utilisant des algorithmes de clustering.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        "category": "Apprentissage Automatique"
+      },
+      {
+        "title": "Tableau de Bord de Prévision des Ventes",
+        "description": "Tableau de bord interactif pour la prédiction des ventes utilisant l'analyse de séries temporelles et la modélisation statistique.",
+        "technologies": ["R", "Shiny", "Séries Temporelles", "ggplot2"],
+        "category": "Visualisation de Données"
+      },
+      {
+        "title": "Outil d'Analyse de Sentiment",
+        "description": "Application de traitement du langage naturel pour analyser le sentiment des clients à partir des médias sociaux et des données d'avis.",
+        "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
+        "category": "Traitement du Langage Naturel"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Me Contacter",
+    "subtitle": "Travaillons Ensemble",
+    "description": "Intéressé par une collaboration ou avez-vous un projet de science des données en tête? N'hésitez pas à me contacter!",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "contact@datascientist.com",
+      "location": "Montréal, QC, Canada",
+      "availability": "Disponible pour des projets freelance"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "retry": "Réessayer",
+    "learnMore": "En Savoir Plus",
+    "viewProject": "Voir le Projet",
+    "downloadCV": "Télécharger CV",
+    "darkMode": "Mode Sombre",
+    "lightMode": "Mode Clair"
+  }
+}

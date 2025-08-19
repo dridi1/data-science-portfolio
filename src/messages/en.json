@@ -1,0 +1,122 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills", 
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Data Scientist",
+    "title": "Data Scientist & Analytics Expert",
+    "description": "Passionate about transforming data into actionable insights. Specializing in machine learning, statistical analysis, and data visualization to drive business decisions.",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate Data Scientist",
+    "description": "I am a dedicated data scientist with expertise in Python, R, and SQL. My passion lies in uncovering patterns in complex datasets and building predictive models that drive business value. With experience in machine learning, statistical analysis, and data visualization, I help organizations make data-driven decisions.",
+    "highlights": {
+      "experience": "5+ Years Experience",
+      "projects": "50+ Projects Completed",
+      "languages": "Multilingual (EN/FR)",
+      "tools": "Advanced Analytics Tools"
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies & Tools",
+    "categories": {
+      "programming": "Programming Languages",
+      "dataScience": "Data Science & ML",
+      "tools": "Tools & Platforms",
+      "databases": "Databases",
+      "cloud": "Cloud Platforms"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "Career Journey",
+    "positions": [
+      {
+        "title": "Senior Data Scientist",
+        "company": "Tech Solutions Inc.",
+        "period": "2022 - Present",
+        "description": "Leading data science initiatives and developing machine learning models for business optimization.",
+        "achievements": [
+          "Developed predictive models improving forecast accuracy by 25%",
+          "Led cross-functional team of 5 data analysts",
+          "Implemented automated reporting reducing manual work by 60%"
+        ]
+      },
+      {
+        "title": "Data Analyst",
+        "company": "Analytics Corp",
+        "period": "2020 - 2022",
+        "description": "Analyzed complex datasets and created visualizations for executive decision-making.",
+        "achievements": [
+          "Built interactive dashboards using Power BI and Tableau",
+          "Conducted statistical analysis for A/B testing campaigns",
+          "Improved data quality processes reducing errors by 40%"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Data Science Portfolio",
+    "items": [
+      {
+        "title": "Customer Segmentation Analysis",
+        "description": "Machine learning model to segment customers based on behavior patterns using clustering algorithms.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        "category": "Machine Learning"
+      },
+      {
+        "title": "Sales Forecasting Dashboard",
+        "description": "Interactive dashboard for sales prediction using time series analysis and statistical modeling.",
+        "technologies": ["R", "Shiny", "Time Series", "ggplot2"],
+        "category": "Data Visualization"
+      },
+      {
+        "title": "Sentiment Analysis Tool",
+        "description": "NLP application to analyze customer sentiment from social media and reviews data.",
+        "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
+        "category": "Natural Language Processing"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's Work Together",
+    "description": "Interested in collaborating or have a data science project in mind? Feel free to reach out!",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "email": "contact@datascientist.com",
+      "location": "Montreal, QC, Canada",
+      "availability": "Available for freelance projects"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "learnMore": "Learn More",
+    "viewProject": "View Project",
+    "downloadCV": "Download CV",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}
