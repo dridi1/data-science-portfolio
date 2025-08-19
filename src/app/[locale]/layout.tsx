@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { ThemeProvider } from 'next-themes';
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 
@@ -7,7 +10,6 @@ export const metadata: Metadata = {
   description: "Professional data science portfolio showcasing expertise in machine learning, statistical analysis, and data visualization.",
   keywords: "data science, machine learning, statistics, python, r, sql, data visualization",
   authors: [{ name: "Data Scientist" }],
-  viewport: "width=device-width, initial-scale=1",
 };
 
 export default async function LocaleLayout({
@@ -18,14 +20,24 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const messages = await getMessages({locale});
 
   return (
-    <div className="min-h-screen bg-background text-foreground font-sans">
-      <Header locale={locale} />
-      <main className="flex-1">
-        {children}
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider
+      attribute="class"
+      defaultTheme="system"
+      enableSystem
+      disableTransitionOnChange
+    >
+      <NextIntlClientProvider messages={messages}>
+        <div className="min-h-screen bg-background text-foreground font-sans">
+          <Header locale={locale} />
+          <main className="flex-1">
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </NextIntlClientProvider>
+    </ThemeProvider>
   );
 }
