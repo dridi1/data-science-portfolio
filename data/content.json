@@ -1,0 +1,208 @@
+{
+  "languages": {
+    "en": {
+      "nav": {
+        "about": "About",
+        "experience": "Experience",
+        "education": "Education",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      "hero": {
+        "greeting": "Hello, I'm",
+        "name": "Dridi Sami",
+        "title": "Data Scientist & ML Engineer",
+        "subtitle": "Transforming data into actionable insights through machine learning and statistical analysis",
+        "cta": "Get In Touch"
+      },
+      "about": {
+        "title": "About Me",
+        "description": "I am a passionate Data Scientist and Machine Learning Engineer with a strong background in engineering and data analysis. I specialize in extracting meaningful insights from complex datasets and building predictive models that drive business decisions.",
+        "skills": [
+          "Python",
+          "Machine Learning",
+          "Data Analysis",
+          "Statistical Modeling",
+          "Deep Learning",
+          "SQL",
+          "TensorFlow",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Seaborn"
+        ]
+      },
+      "experience": {
+        "title": "Experience",
+        "items": [
+          {
+            "title": "Data Scientist",
+            "company": "Tech Solutions Inc.",
+            "period": "2022 - Present",
+            "description": "Developing machine learning models for predictive analytics and business intelligence solutions."
+          },
+          {
+            "title": "ML Engineer",
+            "company": "DataTech Corp",
+            "period": "2020 - 2022",
+            "description": "Implemented end-to-end machine learning pipelines and deployed models to production environments."
+          },
+          {
+            "title": "Data Analyst",
+            "company": "Analytics Pro",
+            "period": "2019 - 2020",
+            "description": "Performed statistical analysis and created data visualizations to support business decision-making."
+          }
+        ]
+      },
+      "education": {
+        "title": "Education",
+        "items": [
+          {
+            "degree": "Master's in Data Science",
+            "school": "University of Technology",
+            "period": "2017 - 2019",
+            "description": "Specialized in machine learning algorithms, statistical modeling, and big data technologies."
+          },
+          {
+            "degree": "Bachelor's in Engineering",
+            "school": "Engineering Institute",
+            "period": "2013 - 2017",
+            "description": "Foundation in mathematics, programming, and analytical thinking."
+          }
+        ]
+      },
+      "projects": {
+        "title": "Featured Projects",
+        "items": [
+          {
+            "title": "Predictive Analytics Dashboard",
+            "description": "Built a comprehensive dashboard for sales forecasting using machine learning algorithms.",
+            "technologies": ["Python", "Flask", "Scikit-learn", "Plotly"]
+          },
+          {
+            "title": "Customer Segmentation Analysis",
+            "description": "Developed clustering models to identify customer segments for targeted marketing campaigns.",
+            "technologies": ["Python", "K-Means", "Pandas", "Matplotlib"]
+          },
+          {
+            "title": "Deep Learning Image Classifier",
+            "description": "Created a convolutional neural network for automated image classification tasks.",
+            "technologies": ["TensorFlow", "Keras", "CNN", "Python"]
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contact Me",
+        "subtitle": "Let's work together on your next data science project",
+        "email": "dridi.sami@email.com",
+        "linkedin": "linkedin.com/in/dridisami",
+        "github": "github.com/dridi1",
+        "location": "Paris, France"
+      }
+    },
+    "fr": {
+      "nav": {
+        "about": "À propos",
+        "experience": "Expérience",
+        "education": "Formation",
+        "projects": "Projets",
+        "contact": "Contact"
+      },
+      "hero": {
+        "greeting": "Bonjour, je suis",
+        "name": "Dridi Sami",
+        "title": "Data Scientist & Ingénieur ML",
+        "subtitle": "Transformer les données en insights exploitables grâce au machine learning et à l'analyse statistique",
+        "cta": "Contactez-moi"
+      },
+      "about": {
+        "title": "À propos de moi",
+        "description": "Je suis un Data Scientist et Ingénieur Machine Learning passionné avec une solide formation en ingénierie et analyse de données. Je me spécialise dans l'extraction d'insights significatifs à partir de jeux de données complexes et la construction de modèles prédictifs qui guident les décisions business.",
+        "skills": [
+          "Python",
+          "Machine Learning",
+          "Analyse de données",
+          "Modélisation statistique",
+          "Deep Learning",
+          "SQL",
+          "TensorFlow",
+          "Scikit-learn",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "Seaborn"
+        ]
+      },
+      "experience": {
+        "title": "Expérience",
+        "items": [
+          {
+            "title": "Data Scientist",
+            "company": "Tech Solutions Inc.",
+            "period": "2022 - Présent",
+            "description": "Développement de modèles de machine learning pour l'analyse prédictive et les solutions de business intelligence."
+          },
+          {
+            "title": "Ingénieur ML",
+            "company": "DataTech Corp",
+            "period": "2020 - 2022",
+            "description": "Implémentation de pipelines machine learning end-to-end et déploiement de modèles en production."
+          },
+          {
+            "title": "Analyste de données",
+            "company": "Analytics Pro",
+            "period": "2019 - 2020",
+            "description": "Analyse statistique et création de visualisations de données pour supporter la prise de décision business."
+          }
+        ]
+      },
+      "education": {
+        "title": "Formation",
+        "items": [
+          {
+            "degree": "Master en Data Science",
+            "school": "Université de Technologie",
+            "period": "2017 - 2019",
+            "description": "Spécialisation en algorithmes de machine learning, modélisation statistique et technologies big data."
+          },
+          {
+            "degree": "Licence en Ingénierie",
+            "school": "Institut d'Ingénierie",
+            "period": "2013 - 2017",
+            "description": "Fondamentaux en mathématiques, programmation et pensée analytique."
+          }
+        ]
+      },
+      "projects": {
+        "title": "Projets phares",
+        "items": [
+          {
+            "title": "Dashboard d'Analytics Prédictive",
+            "description": "Construction d'un dashboard complet pour la prévision des ventes utilisant des algorithmes de machine learning.",
+            "technologies": ["Python", "Flask", "Scikit-learn", "Plotly"]
+          },
+          {
+            "title": "Analyse de Segmentation Client",
+            "description": "Développement de modèles de clustering pour identifier les segments clients pour des campagnes marketing ciblées.",
+            "technologies": ["Python", "K-Means", "Pandas", "Matplotlib"]
+          },
+          {
+            "title": "Classificateur d'Images Deep Learning",
+            "description": "Création d'un réseau de neurones convolutionnel pour la classification automatique d'images.",
+            "technologies": ["TensorFlow", "Keras", "CNN", "Python"]
+          }
+        ]
+      },
+      "contact": {
+        "title": "Contactez-moi",
+        "subtitle": "Travaillons ensemble sur votre prochain projet de data science",
+        "email": "dridi.sami@email.com",
+        "linkedin": "linkedin.com/in/dridisami",
+        "github": "github.com/dridi1",
+        "location": "Paris, France"
+      }
+    }
+  }
+}
