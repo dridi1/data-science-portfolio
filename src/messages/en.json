@@ -1,0 +1,103 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Data Science Professional",
+    "title": "Data Scientist & Analytics Expert",
+    "description": "I transform data into actionable insights using machine learning, statistical analysis, and advanced visualization techniques to drive business decisions.",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate about uncovering insights from data",
+    "description": "I am a dedicated data science professional with expertise in machine learning, statistical analysis, and data visualization. With a strong background in Python, R, and SQL, I help organizations make data-driven decisions that drive growth and innovation.",
+    "experience_years": "5+",
+    "experience_label": "Years Experience",
+    "projects_count": "20+",
+    "projects_label": "Projects Completed",
+    "clients_count": "15+",
+    "clients_label": "Happy Clients"
+  },
+  "skills": {
+    "title": "Skills & Expertise",
+    "subtitle": "Technologies and tools I work with",
+    "categories": {
+      "programming": "Programming Languages",
+      "dataScience": "Data Science & ML",
+      "tools": "Tools & Platforms",
+      "databases": "Databases",
+      "cloud": "Cloud & DevOps"
+    },
+    "items": {
+      "python": "Python",
+      "r": "R",
+      "sql": "SQL",
+      "javascript": "JavaScript",
+      "machineLearning": "Machine Learning",
+      "statisticalAnalysis": "Statistical Analysis",
+      "dataVisualization": "Data Visualization",
+      "deepLearning": "Deep Learning",
+      "powerBI": "Power BI",
+      "tableau": "Tableau",
+      "excel": "Excel",
+      "git": "Git",
+      "sqlServer": "SQL Server",
+      "postgresql": "PostgreSQL",
+      "mongodb": "MongoDB",
+      "aws": "AWS",
+      "azure": "Azure",
+      "googleCloud": "Google Cloud"
+    }
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "subtitle": "My journey in data science and analytics"
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Real-world applications of data science",
+    "viewProject": "View Project",
+    "liveDemo": "Live Demo",
+    "sourceCode": "Source Code"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's discuss your data science needs",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location"
+    }
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "language": {
+    "english": "English",
+    "french": "Français"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "backToTop": "Back to Top"
+  }
+}
