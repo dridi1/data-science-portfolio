@@ -1,0 +1,60 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Portfolio de Science des Données",
+    "subtitle": "Transformer les données en insights exploitables",
+    "description": "Data scientist passionné avec une expertise en apprentissage automatique, analyse statistique et visualisation de données. Spécialisé dans la transformation de données complexes en solutions stratégiques pour les entreprises.",
+    "cta": "Voir Mon Travail",
+    "contact": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Je suis un data scientist passionné par la découverte d'insights à partir de jeux de données complexes. Avec une solide formation en statistiques, apprentissage automatique et analyse business, j'aide les organisations à prendre des décisions basées sur les données qui favorisent la croissance et l'innovation.",
+    "background": "Formation",
+    "interests": "Intérêts"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "programming": "Langages de Programmation",
+    "dataScience": "Data Science et ML",
+    "tools": "Outils et Plateformes",
+    "databases": "Bases de Données",
+    "cloud": "Plateformes Cloud"
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "present": "Présent"
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "viewProject": "Voir le Projet",
+    "viewCode": "Voir le Code",
+    "technologies": "Technologies"
+  },
+  "contact": {
+    "title": "Contactez-Moi",
+    "subtitle": "Discutons de la façon dont nous pouvons travailler ensemble",
+    "name": "Nom",
+    "email": "Email",
+    "message": "Message",
+    "send": "Envoyer le Message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès !",
+    "error": "Échec de l'envoi du message. Veuillez réessayer."
+  },
+  "common": {
+    "darkMode": "Mode Sombre",
+    "lightMode": "Mode Clair",
+    "language": "Langue",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "retry": "Réessayer"
+  }
+}
