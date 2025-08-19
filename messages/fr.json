@@ -1,0 +1,147 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Alex Dridi",
+    "title": "Data Scientist & Expert en Analytique",
+    "description": "Passionné par la transformation des données en insights exploitables. Spécialisé en apprentissage automatique, analyse statistique et visualisation de données pour guider les décisions d'affaires.",
+    "viewProjects": "Voir Mes Projets",
+    "contactMe": "Me Contacter"
+  },
+  "about": {
+    "title": "À Propos de Moi",
+    "description": "Avec plus de 5 ans d'expérience en science des données et analytique, je me spécialise dans l'extraction d'insights significatifs à partir de jeux de données complexes. Mon parcours combine de solides compétences techniques avec une acuité commerciale pour livrer des solutions impactantes.",
+    "highlights": [
+      "5+ années en Science des Données & Analytique",
+      "Expert en Python, R et SQL",
+      "Apprentissage Automatique & Modélisation Statistique",
+      "Visualisation de Données & Intelligence d'Affaires"
+    ],
+    "location": "Basé en Tunisie",
+    "email": "alex.dridi@email.com"
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "categories": {
+      "programming": "Langages de Programmation",
+      "dataScience": "Science des Données & ML",
+      "tools": "Outils & Plateformes",
+      "databases": "Bases de Données"
+    },
+    "items": {
+      "python": "Python",
+      "r": "R",
+      "sql": "SQL",
+      "javascript": "JavaScript",
+      "machineLearning": "Apprentissage Automatique",
+      "statistics": "Analyse Statistique",
+      "dataViz": "Visualisation de Données",
+      "deepLearning": "Apprentissage Profond",
+      "powerBI": "Power BI",
+      "tableau": "Tableau",
+      "excel": "Excel",
+      "git": "Git",
+      "sqlServer": "SQL Server",
+      "postgresql": "PostgreSQL",
+      "mongodb": "MongoDB",
+      "aws": "AWS",
+      "azure": "Azure",
+      "gcp": "Google Cloud"
+    }
+  },
+  "experience": {
+    "title": "Expérience Professionnelle",
+    "positions": [
+      {
+        "title": "Data Scientist Senior",
+        "company": "Tech Solutions Inc.",
+        "period": "2022 - Présent",
+        "description": "Direction des initiatives de science des données et développement de modèles prédictifs pour l'optimisation d'affaires.",
+        "achievements": [
+          "Développé des modèles ML augmentant la rétention client de 25%",
+          "Construit des systèmes de rapports automatisés réduisant le travail manuel de 80%",
+          "Dirigé une équipe de 3 data scientists junior"
+        ]
+      },
+      {
+        "title": "Analyste de Données",
+        "company": "Analytics Pro",
+        "period": "2020 - 2022",
+        "description": "Réalisé des analyses statistiques et créé des visualisations de données pour les insights d'affaires.",
+        "achievements": [
+          "Créé des tableaux de bord interactifs pour les rapports exécutifs",
+          "Amélioré l'efficacité du traitement des données de 40%",
+          "Mené des tests A/B pour l'optimisation produit"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets Phares",
+    "items": [
+      {
+        "title": "Analyse de Segmentation Client",
+        "description": "Projet d'apprentissage automatique pour segmenter les clients selon leurs comportements en utilisant des algorithmes de clustering.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        "highlights": [
+          "Identifié 5 segments clients distincts",
+          "Amélioré le ROI marketing de 30%",
+          "Pipeline de segmentation automatisé"
+        ]
+      },
+      {
+        "title": "Modèle de Prévision des Ventes",
+        "description": "Analyse de séries temporelles et modèle de prévision pour prédire les ventes mensuelles avec 95% de précision.",
+        "technologies": ["R", "Prophet", "ggplot2", "Shiny"],
+        "highlights": [
+          "95% de précision de prévision",
+          "Tableau de bord interactif pour les parties prenantes",
+          "Réduction des coûts d'inventaire de 20%"
+        ]
+      },
+      {
+        "title": "Tableau de Bord Analytique Temps Réel",
+        "description": "Tableau de bord de business intelligence fournissant des insights en temps réel sur les métriques de performance clés.",
+        "technologies": ["Power BI", "SQL Server", "DAX", "Azure"],
+        "highlights": [
+          "Traitement des données en temps réel",
+          "Rapports niveau exécutif",
+          "Système d'alerte automatisé"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Prenons Contact",
+    "description": "Discutons de comment je peux aider avec vos besoins en science des données et analytique.",
+    "form": {
+      "name": "Nom Complet",
+      "email": "Adresse Email",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer le Message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Échec de l'envoi du message. Veuillez réessayer."
+    },
+    "info": {
+      "email": "alex.dridi@email.com",
+      "location": "Tunisie",
+      "linkedin": "linkedin.com/in/alex-dridi"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Quelque chose s'est mal passé",
+    "darkMode": "Mode Sombre",
+    "lightMode": "Mode Clair",
+    "language": "Langue"
+  }
+}
