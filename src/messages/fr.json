@@ -2,28 +2,28 @@
   "navigation": {
     "home": "Accueil",
     "about": "À propos",
-    "skills": "Compétences", 
+    "skills": "Compétences",
     "experience": "Expérience",
     "projects": "Projets",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Bonjour, je suis",
-    "name": "Scientifique des Données",
-    "title": "Scientifique des Données & Expert en Analytique",
-    "description": "Passionné par la transformation des données en insights exploitables. Spécialisé dans l'apprentissage automatique, l'analyse statistique et la visualisation de données pour orienter les décisions d'affaires.",
-    "cta": "Voir Mon Travail",
-    "contact": "Me Contacter"
+    "name": "Slim Dridi",
+    "title": "Futur Data Scientist | Passionné par le machine learning, l’analytique et la visualisation de données",
+    "description": "Étudiant motivé en data science avec une expérience pratique en apprentissage automatique, analyse statistique et visualisation de données à travers des projets académiques et personnels.",
+    "cta": "Voir mes projets",
+    "contact": "Me contacter"
   },
   "about": {
-    "title": "À Propos de Moi",
-    "subtitle": "Scientifique des Données Passionné",
-    "description": "Je suis un scientifique des données dévoué avec une expertise en Python, R et SQL. Ma passion réside dans la découverte de motifs dans des ensembles de données complexes et la construction de modèles prédictifs qui apportent de la valeur aux entreprises. Avec une expérience en apprentissage automatique, analyse statistique et visualisation de données, j'aide les organisations à prendre des décisions basées sur les données.",
+    "title": "À propos de moi",
+    "subtitle": "Futur Data Scientist",
+    "description": "Je suis un futur data scientist avec une solide base en Python, R et SQL. À travers des projets académiques et personnels, j’ai acquis une expérience pratique en nettoyage de données, machine learning et visualisation. Je suis motivé à développer mes compétences en IA et en analytique, et enthousiaste à l’idée de contribuer à des projets où je pourrai apprendre des professionnels et apporter de la valeur.",
     "highlights": {
-      "experience": "5+ Années d'Expérience",
-      "projects": "50+ Projets Complétés",
+      "experience": "Projets académiques et personnels",
+      "projects": "Pratique en ML et analytique",
       "languages": "Multilingue (EN/FR)",
-      "tools": "Outils d'Analytique Avancés"
+      "tools": "En apprentissage des outils Cloud & IA"
     }
   },
   "skills": {
@@ -38,85 +38,74 @@
     }
   },
   "experience": {
-    "title": "Expérience Professionnelle",
-    "subtitle": "Parcours de Carrière",
+    "title": "Expérience",
+    "subtitle": "Parcours d’apprentissage",
     "positions": [
       {
-        "title": "Scientifique des Données Senior",
-        "company": "Tech Solutions Inc.",
+        "title": "Projets Académiques",
+        "company": "Université & Projets personnels",
         "period": "2022 - Présent",
-        "description": "Direction d'initiatives de science des données et développement de modèles d'apprentissage automatique pour l'optimisation d'affaires.",
+        "description": "Travaux pratiques sur divers projets en nettoyage de données, prévision de séries temporelles, machine learning et NLP.",
         "achievements": [
-          "Développé des modèles prédictifs améliorant la précision des prévisions de 25%",
-          "Dirigé une équipe multidisciplinaire de 5 analystes de données",
-          "Implémenté des rapports automatisés réduisant le travail manuel de 60%"
-        ]
-      },
-      {
-        "title": "Analyste de Données",
-        "company": "Analytics Corp",
-        "period": "2020 - 2022",
-        "description": "Analysé des ensembles de données complexes et créé des visualisations pour la prise de décision exécutive.",
-        "achievements": [
-          "Construit des tableaux de bord interactifs avec Power BI et Tableau",
-          "Effectué des analyses statistiques pour des campagnes de tests A/B",
-          "Amélioré les processus de qualité des données réduisant les erreurs de 40%"
+          "Développement d’un modèle de prévision des ventes avec ARIMA",
+          "Réalisation d’une segmentation client par clustering",
+          "Conception de tableaux de bord interactifs"
         ]
       }
     ]
   },
   "projects": {
     "title": "Projets Sélectionnés",
-    "subtitle": "Portfolio de Science des Données",
+    "subtitle": "Portfolio Data Science",
     "items": [
       {
         "title": "Analyse de Segmentation Client",
-        "description": "Modèle d'apprentissage automatique pour segmenter les clients basé sur les motifs de comportement utilisant des algorithmes de clustering.",
+        "description": "Modèle de machine learning pour segmenter des clients à l’aide d’algorithmes de clustering.",
         "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
-        "category": "Apprentissage Automatique"
+        "category": "Machine Learning"
       },
       {
         "title": "Tableau de Bord de Prévision des Ventes",
-        "description": "Tableau de bord interactif pour la prédiction des ventes utilisant l'analyse de séries temporelles et la modélisation statistique.",
+        "description": "Tableau de bord interactif pour la prévision des ventes basé sur l’analyse de séries temporelles.",
         "technologies": ["R", "Shiny", "Séries Temporelles", "ggplot2"],
         "category": "Visualisation de Données"
       },
       {
-        "title": "Outil d'Analyse de Sentiment",
-        "description": "Application de traitement du langage naturel pour analyser le sentiment des clients à partir des médias sociaux et des données d'avis.",
+        "title": "Outil d’Analyse de Sentiment",
+        "description": "Application NLP pour analyser le sentiment des clients à partir des réseaux sociaux et avis produits.",
         "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
         "category": "Traitement du Langage Naturel"
       }
     ]
   },
   "contact": {
-    "title": "Me Contacter",
-    "subtitle": "Travaillons Ensemble",
-    "description": "Intéressé par une collaboration ou avez-vous un projet de science des données en tête? N'hésitez pas à me contacter!",
+    "title": "Me contacter",
+    "subtitle": "Travaillons ensemble",
+    "description": "Intéressé par une collaboration ou à la recherche d’un stage en data science ? N’hésitez pas à me contacter !",
     "form": {
-      "name": "Nom Complet",
-      "email": "Adresse Email",
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
       "subject": "Sujet",
       "message": "Message",
-      "send": "Envoyer le Message",
+      "send": "Envoyer",
       "sending": "Envoi en cours...",
-      "success": "Message envoyé avec succès!",
-      "error": "Erreur lors de l'envoi du message. Veuillez réessayer."
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l’envoi. Veuillez réessayer."
     },
     "info": {
       "email": "contact@datascientist.com",
       "location": "Montréal, QC, Canada",
-      "availability": "Disponible pour des projets freelance"
+      "availability": "Ouvert aux stages et opportunités junior"
     }
   },
   "common": {
     "loading": "Chargement...",
-    "error": "Quelque chose s'est mal passé",
+    "error": "Une erreur est survenue",
     "retry": "Réessayer",
-    "learnMore": "En Savoir Plus",
-    "viewProject": "Voir le Projet",
+    "learnMore": "En savoir plus",
+    "viewProject": "Voir le projet",
     "downloadCV": "Télécharger CV",
-    "darkMode": "Mode Sombre",
-    "lightMode": "Mode Clair"
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair"
   }
 }

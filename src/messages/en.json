@@ -2,28 +2,28 @@
   "navigation": {
     "home": "Home",
     "about": "About",
-    "skills": "Skills", 
+    "skills": "Skills",
     "experience": "Experience",
     "projects": "Projects",
     "contact": "Contact"
   },
   "hero": {
     "greeting": "Hello, I'm",
-    "name": "Data Scientist",
-    "title": "Data Scientist & Analytics Expert",
-    "description": "Passionate about transforming data into actionable insights. Specializing in machine learning, statistical analysis, and data visualization to drive business decisions.",
+    "name": "Slim Dridi",
+    "title": "Aspiring Data Scientist | Passionate about Data & Machine Learning",
+    "description": "Motivated data science student with hands-on experience in machine learning, statistical analysis, and data visualization through academic and personal projects.",
     "cta": "View My Work",
     "contact": "Get In Touch"
   },
   "about": {
     "title": "About Me",
-    "subtitle": "Passionate Data Scientist",
-    "description": "I am a dedicated data scientist with expertise in Python, R, and SQL. My passion lies in uncovering patterns in complex datasets and building predictive models that drive business value. With experience in machine learning, statistical analysis, and data visualization, I help organizations make data-driven decisions.",
+    "subtitle": "Aspiring Data Scientist",
+    "description": "I am an aspiring data scientist with a strong foundation in Python, R, and SQL. Through academic and personal projects, I have gained practical experience in data cleaning, machine learning, and visualization. I am eager to keep learning and contribute to impactful projects.",
     "highlights": {
-      "experience": "5+ Years Experience",
-      "projects": "50+ Projects Completed",
+      "experience": "Academic & Personal Projects",
+      "projects": "Hands-on Machine Learning & Analytics",
       "languages": "Multilingual (EN/FR)",
-      "tools": "Advanced Analytics Tools"
+      "tools": "Developing Skills in Cloud & AI Tools"
     }
   },
   "skills": {
@@ -38,29 +38,18 @@
     }
   },
   "experience": {
-    "title": "Professional Experience",
-    "subtitle": "Career Journey",
+    "title": "Experience",
+    "subtitle": "Learning Journey",
     "positions": [
       {
-        "title": "Senior Data Scientist",
-        "company": "Tech Solutions Inc.",
+        "title": "Academic Projects",
+        "company": "University & Personal Work",
         "period": "2022 - Present",
-        "description": "Leading data science initiatives and developing machine learning models for business optimization.",
+        "description": "Worked on various projects in data cleaning, time series forecasting, machine learning, and NLP.",
         "achievements": [
-          "Developed predictive models improving forecast accuracy by 25%",
-          "Led cross-functional team of 5 data analysts",
-          "Implemented automated reporting reducing manual work by 60%"
-        ]
-      },
-      {
-        "title": "Data Analyst",
-        "company": "Analytics Corp",
-        "period": "2020 - 2022",
-        "description": "Analyzed complex datasets and created visualizations for executive decision-making.",
-        "achievements": [
-          "Built interactive dashboards using Power BI and Tableau",
-          "Conducted statistical analysis for A/B testing campaigns",
-          "Improved data quality processes reducing errors by 40%"
+          "Built a sales forecasting model using ARIMA",
+          "Created customer segmentation using clustering algorithms",
+          "Developed dashboards for data visualization"
         ]
       }
     ]
@@ -71,19 +60,19 @@
     "items": [
       {
         "title": "Customer Segmentation Analysis",
-        "description": "Machine learning model to segment customers based on behavior patterns using clustering algorithms.",
+        "description": "Machine learning model to segment customers using clustering algorithms.",
         "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
         "category": "Machine Learning"
       },
       {
         "title": "Sales Forecasting Dashboard",
-        "description": "Interactive dashboard for sales prediction using time series analysis and statistical modeling.",
+        "description": "Interactive dashboard for sales prediction using time series analysis.",
         "technologies": ["R", "Shiny", "Time Series", "ggplot2"],
         "category": "Data Visualization"
       },
       {
         "title": "Sentiment Analysis Tool",
-        "description": "NLP application to analyze customer sentiment from social media and reviews data.",
+        "description": "NLP application to analyze customer sentiment from social media and reviews.",
         "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
         "category": "Natural Language Processing"
       }
@@ -92,7 +81,7 @@
   "contact": {
     "title": "Get In Touch",
     "subtitle": "Let's Work Together",
-    "description": "Interested in collaborating or have a data science project in mind? Feel free to reach out!",
+    "description": "Interested in collaborating or looking for internships in data science? Feel free to reach out!",
     "form": {
       "name": "Full Name",
       "email": "Email Address",
@@ -106,7 +95,7 @@
     "info": {
       "email": "contact@datascientist.com",
       "location": "Montreal, QC, Canada",
-      "availability": "Available for freelance projects"
+      "availability": "Open to internships & junior opportunities"
     }
   },
   "common": {

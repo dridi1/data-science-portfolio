@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Menu, X, Sun, Moon, Globe } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 import { useTheme } from '@/components/providers/ThemeProvider';
 import { LanguageSwitch } from './LanguageSwitch';
 import { scrollToElement } from '@/lib/utils';
@@ -37,7 +37,7 @@ export function Navbar() {
               onClick={() => handleNavClick('#home')}
               className="text-xl font-bold text-primary-600 dark:text-primary-400"
             >
-              DS Portfolio
+              HOME
             </button>
           </div>
 
