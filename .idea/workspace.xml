@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d302ac2c-9025-4452-8634-ff480272bcdf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/sections/AboutSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/sections/AboutSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/SkillCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/SkillCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/en.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/en.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/fr.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/fr.json" afterDir="false" />
-    </list>
+    <list default="true" id="d302ac2c-9025-4452-8634-ff480272bcdf" name="Changes" comment="some changes" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +13,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dridi1/data-science-portfolio.git",
+    "accountId": "7a9c5457-99f3-4988-a64a-f18d0410eefd"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -32,11 +29,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.Next.js: debug client-side.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "copilot/fix-de7ca263-80a4-411d-9308-ceef21f32d27",
+    "git-widget-placeholder": "#7 on copilot/fix-de7ca263-80a4-411d-93…32d27",
     "ignore.virus.scanning.warn.message": "true",
     "js.debugger.nextJs.config.created.client": "true",
     "js.debugger.nextJs.config.created.server": "true",
@@ -46,10 +44,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.Next.js: server-side.executor": "Run",
     "ts.external.directory.path": "D:\\data-science-portfolio\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\data-science-portfolio\public" />
+    </key>
+  </component>
   <component name="RunManager" selected="JavaScript Debug.Next.js: debug client-side">
     <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
@@ -126,12 +130,25 @@
       <option name="presentableId" value="Default" />
       <updated>1755615843480</updated>
       <workItem from="1755615845752" duration="50000" />
-      <workItem from="1755810057606" duration="1927000" />
+      <workItem from="1755810057606" duration="2260000" />
     </task>
+    <task id="LOCAL-00001" summary="some changes">
+      <option name="closed" value="true" />
+      <created>1755812295713</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755812295713</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="some changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
