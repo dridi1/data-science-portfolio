@@ -1,0 +1,111 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Slim Dridi",
+    "title": "Aspiring Data Scientist | Passionate about Data & Machine Learning",
+    "description": "Motivated data science student with hands-on experience in machine learning, statistical analysis, and data visualization through academic and personal projects.",
+    "cta": "View My Work",
+    "contact": "Get In Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Aspiring Data Scientist",
+    "description": "I am an aspiring data scientist with a strong foundation in Python, R, and SQL. Through academic and personal projects, I have gained practical experience in data cleaning, machine learning, and visualization. I am eager to keep learning and contribute to impactful projects.",
+    "highlights": {
+      "experience": "Academic & Personal Projects",
+      "projects": "Hands-on Machine Learning & Analytics",
+      "languages": "Multilingual (EN/FR)",
+      "tools": "Developing Skills in Cloud & AI Tools"
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies & Tools",
+    "categories": {
+      "programming": "Programming Languages",
+      "dataScience": "Data Science & ML",
+      "tools": "Tools & Platforms",
+      "databases": "Databases",
+      "cloud": "Cloud Platforms"
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Learning Journey",
+    "positions": [
+      {
+        "title": "Academic Projects",
+        "company": "University & Personal Work",
+        "period": "2022 - Present",
+        "description": "Worked on various projects in data cleaning, time series forecasting, machine learning, and NLP.",
+        "achievements": [
+          "Built a sales forecasting model using ARIMA",
+          "Created customer segmentation using clustering algorithms",
+          "Developed dashboards for data visualization"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "subtitle": "Data Science Portfolio",
+    "items": [
+      {
+        "title": "Customer Segmentation Analysis",
+        "description": "Machine learning model to segment customers using clustering algorithms.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        "category": "Machine Learning"
+      },
+      {
+        "title": "Sales Forecasting Dashboard",
+        "description": "Interactive dashboard for sales prediction using time series analysis.",
+        "technologies": ["R", "Shiny", "Time Series", "ggplot2"],
+        "category": "Data Visualization"
+      },
+      {
+        "title": "Sentiment Analysis Tool",
+        "description": "NLP application to analyze customer sentiment from social media and reviews.",
+        "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
+        "category": "Natural Language Processing"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's Work Together",
+    "description": "Interested in collaborating or looking for internships in data science? Feel free to reach out!",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending message. Please try again."
+    },
+    "info": {
+      "email": "contact@datascientist.com",
+      "location": "Montreal, QC, Canada",
+      "availability": "Open to internships & junior opportunities"
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "retry": "Try Again",
+    "learnMore": "Learn More",
+    "viewProject": "View Project",
+    "downloadCV": "Download CV",
+    "darkMode": "Dark Mode",
+    "lightMode": "Light Mode"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "navigation": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "experience": "Expérience",
+    "projects": "Projets",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "name": "Slim Dridi",
+    "title": "Futur Data Scientist | Passionné par le machine learning, l’analytique et la visualisation de données",
+    "description": "Étudiant motivé en data science avec une expérience pratique en apprentissage automatique, analyse statistique et visualisation de données à travers des projets académiques et personnels.",
+    "cta": "Voir mes projets",
+    "contact": "Me contacter"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Futur Data Scientist",
+    "description": "Je suis un futur data scientist avec une solide base en Python, R et SQL. À travers des projets académiques et personnels, j’ai acquis une expérience pratique en nettoyage de données, machine learning et visualisation. Je suis motivé à développer mes compétences en IA et en analytique, et enthousiaste à l’idée de contribuer à des projets où je pourrai apprendre des professionnels et apporter de la valeur.",
+    "highlights": {
+      "experience": "Projets académiques et personnels",
+      "projects": "Pratique en ML et analytique",
+      "languages": "Multilingue (EN/FR)",
+      "tools": "En apprentissage des outils Cloud & IA"
+    }
+  },
+  "skills": {
+    "title": "Compétences Techniques",
+    "subtitle": "Technologies et Outils",
+    "categories": {
+      "programming": "Langages de Programmation",
+      "dataScience": "Science des Données & ML",
+      "tools": "Outils et Plateformes",
+      "databases": "Bases de Données",
+      "cloud": "Plateformes Cloud"
+    }
+  },
+  "experience": {
+    "title": "Expérience",
+    "subtitle": "Parcours d’apprentissage",
+    "positions": [
+      {
+        "title": "Projets Académiques",
+        "company": "Université & Projets personnels",
+        "period": "2022 - Présent",
+        "description": "Travaux pratiques sur divers projets en nettoyage de données, prévision de séries temporelles, machine learning et NLP.",
+        "achievements": [
+          "Développement d’un modèle de prévision des ventes avec ARIMA",
+          "Réalisation d’une segmentation client par clustering",
+          "Conception de tableaux de bord interactifs"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projets Sélectionnés",
+    "subtitle": "Portfolio Data Science",
+    "items": [
+      {
+        "title": "Analyse de Segmentation Client",
+        "description": "Modèle de machine learning pour segmenter des clients à l’aide d’algorithmes de clustering.",
+        "technologies": ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
+        "category": "Machine Learning"
+      },
+      {
+        "title": "Tableau de Bord de Prévision des Ventes",
+        "description": "Tableau de bord interactif pour la prévision des ventes basé sur l’analyse de séries temporelles.",
+        "technologies": ["R", "Shiny", "Séries Temporelles", "ggplot2"],
+        "category": "Visualisation de Données"
+      },
+      {
+        "title": "Outil d’Analyse de Sentiment",
+        "description": "Application NLP pour analyser le sentiment des clients à partir des réseaux sociaux et avis produits.",
+        "technologies": ["Python", "NLTK", "TensorFlow", "AWS"],
+        "category": "Traitement du Langage Naturel"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Me contacter",
+    "subtitle": "Travaillons ensemble",
+    "description": "Intéressé par une collaboration ou à la recherche d’un stage en data science ? N’hésitez pas à me contacter !",
+    "form": {
+      "name": "Nom complet",
+      "email": "Adresse e-mail",
+      "subject": "Sujet",
+      "message": "Message",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "error": "Erreur lors de l’envoi. Veuillez réessayer."
+    },
+    "info": {
+      "email": "contact@datascientist.com",
+      "location": "Montréal, QC, Canada",
+      "availability": "Ouvert aux stages et opportunités junior"
+    }
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "retry": "Réessayer",
+    "learnMore": "En savoir plus",
+    "viewProject": "Voir le projet",
+    "downloadCV": "Télécharger CV",
+    "darkMode": "Mode sombre",
+    "lightMode": "Mode clair"
+  }
+}
