@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dridi Sami - Data Scientist & ML Engineer Portfolio">
+    <title>Dridi Sami - Data Scientist & ML Engineer</title>
+    
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-name">DS</span>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="menuitem"><a href="#about" data-key="nav.about">About</a></li>
+                <li role="menuitem"><a href="#experience" data-key="nav.experience">Experience</a></li>
+                <li role="menuitem"><a href="#education" data-key="nav.education">Education</a></li>
+                <li role="menuitem"><a href="#projects" data-key="nav.projects">Projects</a></li>
+                <li role="menuitem"><a href="#contact" data-key="nav.contact">Contact</a></li>
+            </ul>
+            
+            <div class="nav-controls">
+                <button class="lang-toggle" aria-label="Switch language">
+                    <span class="lang-current">EN</span>
+                    <span class="lang-separator">|</span>
+                    <span class="lang-alt">FR</span>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting" data-key="hero.greeting">Hello, I'm</p>
+                    <h1 class="hero-name" data-key="hero.name">Dridi Sami</h1>
+                    <h2 class="hero-title" data-key="hero.title">Data Scientist & ML Engineer</h2>
+                    <p class="hero-subtitle" data-key="hero.subtitle">Transforming data into actionable insights through machine learning and statistical analysis</p>
+                    <a href="#contact" class="cta-button" data-key="hero.cta">Get In Touch</a>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-photo">
+                        <img src="assets/images/profile.svg" alt="Dridi Sami" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title" data-key="about.title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description" data-key="about.description">I am a passionate Data Scientist and Machine Learning Engineer with a strong background in engineering and data analysis. I specialize in extracting meaningful insights from complex datasets and building predictive models that drive business decisions.</p>
+                </div>
+                <div class="skills-grid">
+                    <h3 class="skills-title">Technical Skills</h3>
+                    <div class="skills-list" id="skills-container">
+                        <!-- Skills will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title" data-key="experience.title">Experience</h2>
+            <div class="timeline" id="experience-timeline">
+                <!-- Experience items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title" data-key="education.title">Education</h2>
+            <div class="education-grid" id="education-container">
+                <!-- Education items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title" data-key="projects.title">Featured Projects</h2>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <h2 class="section-title" data-key="contact.title">Contact Me</h2>
+                <p class="contact-subtitle" data-key="contact.subtitle">Let's work together on your next data science project</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <a href="mailto:dridi.sami@email.com" class="contact-link" data-key="contact.email">dridi.sami@email.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">💼</span>
+                        <a href="https://linkedin.com/in/dridisami" class="contact-link" data-key="contact.linkedin" target="_blank" rel="noopener">linkedin.com/in/dridisami</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">🐙</span>
+                        <a href="https://github.com/dridi1" class="contact-link" data-key="contact.github" target="_blank" rel="noopener">github.com/dridi1</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <span class="contact-text" data-key="contact.location">Paris, France</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dridi Sami. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/language.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

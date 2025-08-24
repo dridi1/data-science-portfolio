@@ -1,0 +1,40 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="faceGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="150" cy="150" r="150" fill="url(#bgGradient)"/>
+  
+  <!-- Person silhouette -->
+  <g transform="translate(150, 150)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="35" fill="url(#faceGradient)"/>
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="40" rx="45" ry="60" fill="#1e293b"/>
+    
+    <!-- Suit jacket -->
+    <path d="M -45 10 Q -45 5 -40 5 L -10 5 L -10 20 L -45 20 Z" fill="#334155"/>
+    <path d="M 45 10 Q 45 5 40 5 L 10 5 L 10 20 L 45 20 Z" fill="#334155"/>
+    
+    <!-- Tie -->
+    <polygon points="0,5 8,15 0,45 -8,15" fill="#ef4444"/>
+    
+    <!-- Shirt -->
+    <rect x="-10" y="5" width="20" height="40" fill="#f8fafc"/>
+  </g>
+  
+  <!-- Professional touch - add some geometric elements -->
+  <circle cx="50" cy="50" r="3" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="250" cy="80" r="2" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="70" cy="250" r="2" fill="rgba(255,255,255,0.2)"/>
+  <circle cx="230" cy="230" r="3" fill="rgba(255,255,255,0.3)"/>
+</svg>
